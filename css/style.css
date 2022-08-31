@@ -1,0 +1,240 @@
+body{
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+background-color:  #E5E5E5;
+margin: 0;
+padding: 0;
+}
+/* nav section */
+nav{
+    background-color: blue;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+.nav-section{
+width: 870px;
+display: flex;
+justify-content: space-between;
+}
+.single-icon{
+display: flex;
+color: whitesmoke;
+align-items: center;
+}
+.single-icon img{
+    height: 50px;
+    width: 50px;
+    margin-right: 16px;
+}
+.double-icon >ul{
+display: flex;
+align-items: center;
+}
+ul li{
+list-style: none;
+position: relative;
+}
+ul li a{
+text-decoration: none;
+color: whitesmoke;
+padding: 6px 15px;
+}
+.double-icon >ul li:hover>ul{
+    display: block;
+    position: absolute;
+}
+.drop{
+    display: none;
+    background-color: #2596be;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 75px;
+    top: 40px;
+    box-shadow: -7px 9px 13px 1px rgba(0,0,0,0.72);
+-webkit-box-shadow: -7px 9px 13px 1px rgba(0,0,0,0.72);
+-moz-box-shadow: -7px 9px 13px 1px rgba(0,0,0,0.72);
+}
+.drop li a{
+    margin: 0;
+    padding-left: 0;
+}
+/* css for top players */
+main{
+    display: flex;
+    justify-content: center;
+}
+.main-section{
+    width: 870px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+.top-player{
+
+}
+.top-player h1{
+    color: #562EFF;
+    font-size: 18px;
+    font-weight: 500px!important;
+    margin-left: 30px;
+    padding-top: 17px;
+}
+.players{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+row-gap: 18px;
+}
+.player{
+display: flex;
+align-items: center;
+margin-left: 30px;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+    margin-right: 7px;
+}
+.player h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+hr{
+width: 807px;
+height: 0px;
+margin: 21px 0 21px 0;
+border: 1px solid #D1D1D1;
+}
+/* css for blog */
+.top-blog{
+    margin-bottom: 40px;
+}
+.top-blog h1{
+    color: #562EFF;
+    font-size: 18px;
+    font-weight: 500px!important;
+    margin-left: 30px;
+    padding-top: 17px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 18px;
+}
+.blog{
+display: flex;
+/* align-items: center; */
+margin-left: 30px;
+
+}
+.blog-text h1{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+    padding: 0;
+
+}
+.blog img{
+    height: 177px;
+    width: 177px;
+    margin-right: 7px;
+}
+/* css for courses */
+.top-course{
+    margin-bottom: 20px;
+}
+.top-course h1{
+    font-Weight:500;
+    font-size: 24px;
+    color: #562EFF;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+.courses{
+display: flex;
+
+}
+.course{
+    box-shadow: 3px 9px 16px 11px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 9px 16px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 9px 16px 11px rgba(0,0,0,0.75);
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.course img{
+    height: 184px;
+    width: 230px;
+}
+.course h1{
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+.course p{
+    color: #ED6B4F;
+}
+/* footer section */
+.other-icon{
+    background-color: #0D0D0D;
+    padding: 25px 0 32px 0;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon a i{
+    padding: 0 10px;
+    font-size: 20px;
+    color: #CAD5E2;
+}
+/* media qurey responsive webside */
+@media screen and (max-width:668px){
+    nav{
+        background-color: skyblue;
+    }
+    .nav-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .players, .blogs{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+  
+}
+@media screen and (min-width:670) {
+    nav{
+        background-color: skyblue;
+    }
+    .nav-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .players, .blogs{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+    .courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
